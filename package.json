@@ -1,0 +1,22 @@
+{
+  "name": "systemctl",
+  "version": "0.1.0",
+  "description": "Allows you to control system services using the systemctl command easily and asynchronously",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bmcclure/node-systemctl.git"
+  },
+  "keywords": [
+    "Systemctl",
+    "Systemd",
+    "Arch",
+    "Archlinux"
+  ],
+  "author": "Ben McClure",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/bmcclure/node-systemctl/issues"
+  },
+  "homepage": "https://github.com/bmcclure/node-systemctl",
+  "dependencies": {}
+}
