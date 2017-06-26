@@ -1,6 +1,6 @@
 {
   "name": "systemctl",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Allows you to control system services using the systemctl command easily and asynchronously",
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
     "url": "https://github.com/bmcclure/node-systemctl/issues"
   },
   "homepage": "https://github.com/bmcclure/node-systemctl",
-  "dependencies": {}
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "child-process-promise": "^2.2.1"
+  }
 }
