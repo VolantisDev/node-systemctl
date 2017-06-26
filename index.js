@@ -5,41 +5,41 @@ var exec = require("child-process-promise").exec
     Enable or disable services with systemctl
 \*****************************************************************************/
 module.exports = {
-    is_enabled: _is_enabled,
-    enable: _enable,
-    disable: _disable,
-    start: _start,
-    stop: _stop,
-    restart: _restart,
-    daemon_reload: _daemon_reload,
+    isEnabled: isEnabled,
+    enable: enable,
+    disable: disable,
+    start: start,
+    stop: stop,
+    restart: restart,
+    daemon_reload: daemonReload,
     exec: _exec
 }
 
-function _enable(service_name) {
+function enable(service_name) {
     return _exec("enable " + service_name);
 }
 
-function _disable(service_name) {
+function disable(service_name) {
     return _exec("disable " + service_name);
 }
 
-function _start(service_name) {
+function start(service_name) {
     return _exec("start " + service_name);
 }
 
-function _stop(service_name) {
+function stop(service_name) {
     return _exec("stop " + service_name);
 }
 
-function _restart(service_name) {
+function restart(service_name) {
     return _exec("restart " + service_name);
 }
 
-function _daemon_reload() {
+function daemonReload() {
     return _exec("daemon-reload");
 }
 
-function _is_enabled(service_name) {
+function isEnabled(service_name) {
     return new Promise((resolve, reject) => {
         _exec('is-enabled ' + service_name)
             .then((result) => {
