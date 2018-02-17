@@ -9,6 +9,7 @@ import systemctl from 'node-systemctl';
 // start stop restart .....
 systemctl('start','my-service-name').then(output=>console.log)
 
-systemctl.isEnabled('service-name') => true false
+systemctl('is-enabled','service_name')
+        .then((result)=>(result.stdout.indexOf('enabled') != -1))
+        .then(console.log) => true false
 ```
-
