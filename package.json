@@ -1,6 +1,6 @@
 {
   "name": "systemctl",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Allows you to control system services using the systemctl command easily and asynchronously",
   "repository": "bmcclure/node-systemctl",
   "keywords": [
