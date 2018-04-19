@@ -10,4 +10,22 @@ The commands are natively run using sudo, so either the script should be run as 
 
 ## Usage
 
-Coming soon
+Use the main module with ES6:
+```
+import systemctl from 'systemctl'
+
+// Start a service
+systemctl.start('service-name').then(output => console.log)
+
+// Check if a service is enabled
+systemctl.isEnabled('service-name').then(enabled => {
+    console.log((enabled ? 'Enabled' : 'Not enabled'));
+})
+```
+
+Import and use the "run" command directly with ES6:
+```
+import systemctl from 'systemctl/run'
+
+systemctl.run('start', 'service-name').then(output => console.log)
+```
