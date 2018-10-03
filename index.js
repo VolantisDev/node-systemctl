@@ -25,6 +25,21 @@ function isEnabled(serviceName) {
     })
 }
 
+function isActive(serviceName) {
+    return new Promise((resolve, reject) => {
+        run('is-active', serviceName)
+            .then((result) => {
+                if(result.stdout.indexOf('active') != -1 && result.stdout.indexOf('inactive')==-1)
+                  resolve(true)
+                else
+                  resolve(false)
+            })
+            .catch(function (err) {
+                resolve(false)
+            })
+    })
+}
+
 function restart(serviceName) {
     return run("restart", serviceName)
 }
