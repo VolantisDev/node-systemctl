@@ -1,6 +1,6 @@
 {
   "name": "systemctl",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Allows you to control system services using the systemctl command easily and asynchronously",
   "repository": "bmcclure/node-systemctl",
   "keywords": [
@@ -11,7 +11,6 @@
   ],
   "author": "Ben McClure <ben.mcclure@gmail.com> (volantisdev.com)",
   "license": "MIT",
-
   "homepage": "https://github.com/bmcclure/node-systemctl",
   "bugs": {
     "url": "https://github.com/bmcclure/node-systemctl/issues"
