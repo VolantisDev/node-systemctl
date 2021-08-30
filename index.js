@@ -37,6 +37,14 @@ function stop(serviceName) {
     return run("stop", serviceName)
 }
 
+function mask(serviceName) {
+    return run("mask", serviceName)
+}
+
+function unmask(serviceName) {
+    return run("unmask", serviceName)
+}
+
 module.exports.run = run
 module.exports.daemonReload = daemonReload
 module.exports.disable = disable
@@ -45,3 +53,5 @@ module.exports.isEnabled = isEnabled
 module.exports.restart = restart
 module.exports.start = start
 module.exports.stop = stop
+module.exports.mask = mask
+module.exports.unmask = unmask
