@@ -21,7 +21,8 @@
   "contributors": [
     "Ben McClure <ben.mcclure@gmail.com> (volantisdev.com)",
     "Frank Lemanschik",
-    "Justin Schwartzbeck <justinmschw@gmail.com>"
+    "Justin Schwartzbeck <justinmschw@gmail.com>",
+    "chaojinn"
   ],
   "dependencies": {
     "bluebird": "^3.5.0",
