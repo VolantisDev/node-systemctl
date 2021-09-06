@@ -2,7 +2,10 @@
   "name": "systemctl",
   "version": "0.2.3",
   "description": "Allows you to control system services using the systemctl command easily and asynchronously",
-  "repository": "bmcclure/node-systemctl",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:justinschw/systemctl-cmd.git"
+  },
   "keywords": [
     "Systemctl",
     "Systemd",
@@ -17,10 +20,16 @@
   },
   "contributors": [
     "Ben McClure <ben.mcclure@gmail.com> (volantisdev.com)",
-    "Frank Lemanschik"
+    "Frank Lemanschik",
+    "Justin Schwartzbeck <justinmschw@gmail.com>"
   ],
   "dependencies": {
     "bluebird": "^3.5.0",
     "child-process-promise": "^2.2.1"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

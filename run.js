@@ -1,11 +1,7 @@
 var exec = require("child-process-promise").exec
 
-module.exports = function run(cmd, service_name) {
-    var command = 'systemctl ' + cmd
+module.exports = function run(cmd, service_name, sudo = false) {
+    var command = `${(sudo) ? 'sudo ' : ''}systemctl ${cmd} ${service_name}`;
 
-    if (service_name) {
-        command = command + ' ' + service_name
-    }
-
-    return exec(command)
+    return exec(command);
 }
